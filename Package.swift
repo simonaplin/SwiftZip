@@ -106,7 +106,7 @@ var package = Package(
                 .define("HAVE_CONFIG_H"),
                 .headerSearchPath("libzip/lib"),
                 .headerSearchPath("include-private"),
-                .headerSearchPath("include-private/darwin", .when(platforms: [.macOS, .iOS, .tvOS, .watchOS])),
+                .headerSearchPath("include-private/darwin", .when(platforms: [.macOS, .iOS, .tvOS, .watchOS, .macCatalyst])),
                 .headerSearchPath("include-private/linux", .when(platforms: [.linux])),
             ],
             linkerSettings: [
